@@ -10,24 +10,29 @@ inquirer
 .prompt([
     {
         type: 'input',
-        message: 'What is their name?',
+        message: 'What is this Manager\'s name?',
         name: 'name',
     },
     {
+        type: 'input',
+        message: 'What is their employee id?',
+        name: 'id',
+    },
+    {
        type: 'input',
-       message: 'What is their id?',
-       name: 'id',
+       message: 'What is their email address?',
+       name: 'email',
     },
     {
         type: 'input',
-        message: 'What is their email?',
-        name: 'email',
+        message: 'What is their office number?',
+        name: 'office',
     },
 ])
 .then((response) => {
-    const {name, id, email} = response;
+    const {name, id, email, office} = response;
 
-    const employee = new Employee(name, id, email)
+    const employee1 = new Manager(name, id, email, office);
 
 
 }
