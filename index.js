@@ -40,8 +40,40 @@ inquirer
 
     const employee1 = new Manager(name, id, email, office);
 
-    if (choice === true){
+    const index = 
+    `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fake Biz</title>
+    </head>
+    <body>
+        <header>
+            <h1>Fake Biz</h1>
+        </header>
+        <main>
+            <h2>Team Roster</h2>
+            <div>
+                <h4 id="manager">Manager</h4>
+                <p id="name">${name}</p>
+                <p id="id">${id}</p>
+                <p id="email">${email}</p>
+                <p id="office">${office}</p>
+            </div>
+            <div></div>
+            <div></div>
+        </main>
+        <footer>
+    
+        </footer>
+        
+    </body>
+    </html>`
 
-    }
-}
-)
+    fs.writeFile('index.html', index, (err) => {
+        console.error(err);
+    });
+})
+
