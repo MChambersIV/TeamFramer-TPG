@@ -40,6 +40,7 @@ inquirer
 
     const employee1 = new Manager(name, id, email, office);
     const employee2 = new Engineer();
+    const employee2role = employee2.getRole()
     const employee3 = new Engineer();
     const employee4 = new Intern();
     const employee5 = new Intern();
@@ -50,6 +51,7 @@ inquirer
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
         <title>Fake Biz</title>
     </head>
     <body>
@@ -68,7 +70,7 @@ inquirer
             <div></div>
             <div>
                 <h4 id="manager"></h4>
-                <p id="name">${employee2.name}</p>
+                <p id=employee2role>${employee2.name}</p>
                 <p id="id">${employee2.id}</p>
                 <p id="email">${employee2.email}</p>
                 <p id="office">${employee2.office}</p>
