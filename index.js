@@ -57,10 +57,10 @@ inquirer
             <h2>Team Roster</h2>
             <div>
                 <h4 id="manager">Manager</h4>
-                <p id="name">${name}</p>
-                <p id="id">${id}</p>
-                <p id="email">${email}</p>
-                <p id="office">${office}</p>
+                <p id="name">${employee1.name}</p>
+                <p id="id">${employee1.id}</p>
+                <p id="email">${employee1.email}</p>
+                <p id="office">${employee1.office}</p>
             </div>
             <div></div>
             <div></div>
