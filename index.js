@@ -39,7 +39,10 @@ inquirer
     const {name, id, email, office, choice} = response;
 
     const employee1 = new Manager(name, id, email, office);
-
+    const employee2 = new Engineer();
+    const employee3 = new Engineer();
+    const employee4 = new Intern();
+    const employee5 = new Intern();
     const index = 
     `<!DOCTYPE html>
     <html lang="en">
@@ -61,6 +64,38 @@ inquirer
                 <p id="id">${employee1.id}</p>
                 <p id="email">${employee1.email}</p>
                 <p id="office">${employee1.office}</p>
+            </div>
+            <div></div>
+            <div>
+                <h4 id="manager"></h4>
+                <p id="name">${employee2.name}</p>
+                <p id="id">${employee2.id}</p>
+                <p id="email">${employee2.email}</p>
+                <p id="office">${employee2.office}</p>
+            </div>
+            <div></div>
+            <div>
+                <h4 id="manager"></h4>
+                <p id="name">${employee3.name}</p>
+                <p id="id">${employee3.id}</p>
+                <p id="email">${employee3.email}</p>
+                <p id="office">${employee3.office}</p>
+            </div>
+            <div></div>
+            <div>
+                <h4 id="manager"></h4>
+                <p id="name">${employee4.name}</p>
+                <p id="id">${employee4.id}</p>
+                <p id="email">${employee4.email}</p>
+                <p id="office">${employee4.office}</p>
+            </div>
+            <div></div>
+            <div>
+                <h4 id="manager"></h4>
+                <p id="name">${employee5.name}</p>
+                <p id="id">${employee5.id}</p>
+                <p id="email">${employee5.email}</p>
+                <p id="office">${employee5.office}</p>
             </div>
             <div></div>
             <div></div>
