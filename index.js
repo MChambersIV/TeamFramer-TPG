@@ -72,8 +72,8 @@ inquirer
     </body>
     </html>`
 
-    fs.writeFile('index.html', index, (err) => {
-        console.error(err);
+    fs.writeFile('./dist/index.html', index, () => {
+        console.log("Generating index.html");
     });
 })
 
